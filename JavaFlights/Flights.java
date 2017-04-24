@@ -80,7 +80,7 @@ public class Flights {
         }
     }
 
-    public static String LeeTexto(){
+    public static String LeInput(){
         final String FILENAME = "rotas.txt";
         String str = "";
         String aux = "";
@@ -111,7 +111,7 @@ public class Flights {
 
     public static void main(String[] args)throws java.io.IOException  {
         Scanner in = new Scanner(System.in);
-        String str = LeeTexto();
+        String str = LeInput();
         InsereVoos(str);
         System.out.println("Indique entre que cidades pretende voar!\n" + "Origem: ");
         String origem = in.next();
